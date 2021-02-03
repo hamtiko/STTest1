@@ -7,16 +7,31 @@
 
 import UIKit
 
+import RxFlow
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    public let coordinator = FlowCoordinator()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        window = UIWindow(windowScene: windowScene)
+
+        // Coordinator
+        if let window = self.window {
+            let mainFlow = MainFlow()
+
+            self.coordinator.coordinate(flow: mainFlow, with: OneStepper(withSingleStep: AppStep.main))
+
+            Flows.use(mainFlow, when: .created) { root in
+                window.rootViewController = root
+                window.makeKeyAndVisible()
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

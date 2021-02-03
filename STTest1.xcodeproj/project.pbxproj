@@ -3,18 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9878824E25CB25960082E3E8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9878824D25CB25960082E3E8 /* RxSwift */; };
+		9878825025CB25960082E3E8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9878824F25CB25960082E3E8 /* RxCocoa */; };
+		9878825225CB25960082E3E8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 9878825125CB25960082E3E8 /* RxRelay */; };
+		9878825825CB25EC0082E3E8 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = 9878825725CB25EC0082E3E8 /* Reusable */; };
+		9878826125CB26DB0082E3E8 /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 9878826025CB26DB0082E3E8 /* RxFlow */; };
+		9878826725CB27070082E3E8 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 9878826625CB27070082E3E8 /* Swinject */; };
+		9878826D25CB27190082E3E8 /* SwinjectAutoregistration in Frameworks */ = {isa = PBXBuildFile; productRef = 9878826C25CB27190082E3E8 /* SwinjectAutoregistration */; };
+		9878827325CB284D0082E3E8 /* RxRestClient in Frameworks */ = {isa = PBXBuildFile; productRef = 9878827225CB284D0082E3E8 /* RxRestClient */; };
+		9878827925CB29380082E3E8 /* RxOptional in Frameworks */ = {isa = PBXBuildFile; productRef = 9878827825CB29380082E3E8 /* RxOptional */; };
+		9878828525CB2CF80082E3E8 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9878828425CB2CF80082E3E8 /* Kingfisher */; };
+		9878828B25CB2F400082E3E8 /* UIScrollView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9878828A25CB2F400082E3E8 /* UIScrollView+Extensions.swift */; };
 		98DF077025CB0F99003943DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF076F25CB0F99003943DA /* AppDelegate.swift */; };
 		98DF077225CB0F99003943DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF077125CB0F99003943DA /* SceneDelegate.swift */; };
-		98DF077425CB0F99003943DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF077325CB0F99003943DA /* ViewController.swift */; };
-		98DF077725CB0F99003943DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DF077525CB0F99003943DA /* Main.storyboard */; };
+		98DF077425CB0F99003943DA /* PricebooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF077325CB0F99003943DA /* PricebooksViewController.swift */; };
+		98DF077725CB0F99003943DA /* PricebooksViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DF077525CB0F99003943DA /* PricebooksViewController.storyboard */; };
 		98DF077925CB0F9A003943DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98DF077825CB0F9A003943DA /* Assets.xcassets */; };
 		98DF077C25CB0F9A003943DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98DF077A25CB0F9A003943DA /* LaunchScreen.storyboard */; };
 		98DF078725CB0F9B003943DA /* STTest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF078625CB0F9B003943DA /* STTest1Tests.swift */; };
 		98DF079225CB0F9B003943DA /* STTest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF079125CB0F9B003943DA /* STTest1UITests.swift */; };
+		98DF07AB25CB1034003943DA /* PricebookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07AA25CB1034003943DA /* PricebookResponse.swift */; };
+		98DF07C725CB10E2003943DA /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07C625CB10E2003943DA /* MainFlow.swift */; };
+		98DF07CC25CB111D003943DA /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07CB25CB111D003943DA /* AppStep.swift */; };
+		98DF07D225CB119E003943DA /* MainAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07D125CB119E003943DA /* MainAssembly.swift */; };
+		98DF07DB25CB11FC003943DA /* PricebooksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07DA25CB11FC003943DA /* PricebooksViewModel.swift */; };
+		98DF07E425CB139A003943DA /* PricebookCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07E325CB139A003943DA /* PricebookCell.swift */; };
+		98DF07ED25CB14BE003943DA /* PricebookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF07EC25CB14BE003943DA /* PricebookService.swift */; };
+		98DF080825CB1659003943DA /* PricebooksQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF080725CB1659003943DA /* PricebooksQuery.swift */; };
+		98DF080D25CB1716003943DA /* PricebooksState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF080C25CB1716003943DA /* PricebooksState.swift */; };
+		98DF081225CB18B1003943DA /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DF081125CB18B1003943DA /* Endpoints.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9878828A25CB2F400082E3E8 /* UIScrollView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extensions.swift"; sourceTree = "<group>"; };
 		98DF076C25CB0F99003943DA /* STTest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = STTest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DF076F25CB0F99003943DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98DF077125CB0F99003943DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		98DF077325CB0F99003943DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		98DF077625CB0F99003943DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98DF077325CB0F99003943DA /* PricebooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebooksViewController.swift; sourceTree = "<group>"; };
+		98DF077625CB0F99003943DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PricebooksViewController.storyboard; sourceTree = "<group>"; };
 		98DF077825CB0F9A003943DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98DF077B25CB0F9A003943DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98DF077D25CB0F9A003943DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +71,16 @@
 		98DF078D25CB0F9B003943DA /* STTest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = STTest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		98DF079125CB0F9B003943DA /* STTest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTest1UITests.swift; sourceTree = "<group>"; };
 		98DF079325CB0F9B003943DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98DF07AA25CB1034003943DA /* PricebookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebookResponse.swift; sourceTree = "<group>"; };
+		98DF07C625CB10E2003943DA /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
+		98DF07CB25CB111D003943DA /* AppStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStep.swift; sourceTree = "<group>"; };
+		98DF07D125CB119E003943DA /* MainAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAssembly.swift; sourceTree = "<group>"; };
+		98DF07DA25CB11FC003943DA /* PricebooksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebooksViewModel.swift; sourceTree = "<group>"; };
+		98DF07E325CB139A003943DA /* PricebookCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebookCell.swift; sourceTree = "<group>"; };
+		98DF07EC25CB14BE003943DA /* PricebookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebookService.swift; sourceTree = "<group>"; };
+		98DF080725CB1659003943DA /* PricebooksQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebooksQuery.swift; sourceTree = "<group>"; };
+		98DF080C25CB1716003943DA /* PricebooksState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PricebooksState.swift; sourceTree = "<group>"; };
+		98DF081125CB18B1003943DA /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +88,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9878826D25CB27190082E3E8 /* SwinjectAutoregistration in Frameworks */,
+				9878826125CB26DB0082E3E8 /* RxFlow in Frameworks */,
+				9878825225CB25960082E3E8 /* RxRelay in Frameworks */,
+				9878827325CB284D0082E3E8 /* RxRestClient in Frameworks */,
+				9878828525CB2CF80082E3E8 /* Kingfisher in Frameworks */,
+				9878825025CB25960082E3E8 /* RxCocoa in Frameworks */,
+				9878827925CB29380082E3E8 /* RxOptional in Frameworks */,
+				9878824E25CB25960082E3E8 /* RxSwift in Frameworks */,
+				9878825825CB25EC0082E3E8 /* Reusable in Frameworks */,
+				9878826725CB27070082E3E8 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +118,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9878828925CB2F320082E3E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9878828A25CB2F400082E3E8 /* UIScrollView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		98DF076325CB0F99003943DA = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +149,9 @@
 		98DF076E25CB0F99003943DA /* STTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				98DF07A825CB101C003943DA /* Arch */,
 				98DF076F25CB0F99003943DA /* AppDelegate.swift */,
 				98DF077125CB0F99003943DA /* SceneDelegate.swift */,
-				98DF077325CB0F99003943DA /* ViewController.swift */,
-				98DF077525CB0F99003943DA /* Main.storyboard */,
 				98DF077825CB0F9A003943DA /* Assets.xcassets */,
 				98DF077A25CB0F9A003943DA /* LaunchScreen.storyboard */,
 				98DF077D25CB0F9A003943DA /* Info.plist */,
@@ -128,6 +177,82 @@
 			path = STTest1UITests;
 			sourceTree = "<group>";
 		};
+		98DF07A825CB101C003943DA /* Arch */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07D025CB1194003943DA /* DI */,
+				98DF07B025CB104F003943DA /* Flows */,
+				98DF07A925CB1022003943DA /* Models */,
+				98DF07AF25CB1049003943DA /* Views */,
+				98DF07EB25CB14AF003943DA /* Services */,
+				9878828925CB2F320082E3E8 /* Extensions */,
+			);
+			path = Arch;
+			sourceTree = "<group>";
+		};
+		98DF07A925CB1022003943DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07AA25CB1034003943DA /* PricebookResponse.swift */,
+				98DF080725CB1659003943DA /* PricebooksQuery.swift */,
+				98DF080C25CB1716003943DA /* PricebooksState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		98DF07AF25CB1049003943DA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07D925CB11E6003943DA /* Pricebooks */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		98DF07B025CB104F003943DA /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07C625CB10E2003943DA /* MainFlow.swift */,
+				98DF07CB25CB111D003943DA /* AppStep.swift */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		98DF07D025CB1194003943DA /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07D125CB119E003943DA /* MainAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		98DF07D925CB11E6003943DA /* Pricebooks */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07E225CB1388003943DA /* Cells */,
+				98DF077525CB0F99003943DA /* PricebooksViewController.storyboard */,
+				98DF077325CB0F99003943DA /* PricebooksViewController.swift */,
+				98DF07DA25CB11FC003943DA /* PricebooksViewModel.swift */,
+			);
+			path = Pricebooks;
+			sourceTree = "<group>";
+		};
+		98DF07E225CB1388003943DA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				98DF07E325CB139A003943DA /* PricebookCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		98DF07EB25CB14AF003943DA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				98DF081125CB18B1003943DA /* Endpoints.swift */,
+				98DF07EC25CB14BE003943DA /* PricebookService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +269,18 @@
 			dependencies = (
 			);
 			name = STTest1;
+			packageProductDependencies = (
+				9878824D25CB25960082E3E8 /* RxSwift */,
+				9878824F25CB25960082E3E8 /* RxCocoa */,
+				9878825125CB25960082E3E8 /* RxRelay */,
+				9878825725CB25EC0082E3E8 /* Reusable */,
+				9878826025CB26DB0082E3E8 /* RxFlow */,
+				9878826625CB27070082E3E8 /* Swinject */,
+				9878826C25CB27190082E3E8 /* SwinjectAutoregistration */,
+				9878827225CB284D0082E3E8 /* RxRestClient */,
+				9878827825CB29380082E3E8 /* RxOptional */,
+				9878828425CB2CF80082E3E8 /* Kingfisher */,
+			);
 			productName = STTest1;
 			productReference = 98DF076C25CB0F99003943DA /* STTest1.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +352,16 @@
 				Base,
 			);
 			mainGroup = 98DF076325CB0F99003943DA;
+			packageReferences = (
+				9878824C25CB25960082E3E8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				9878825625CB25EC0082E3E8 /* XCRemoteSwiftPackageReference "Reusable" */,
+				9878825F25CB26DB0082E3E8 /* XCRemoteSwiftPackageReference "RxFlow" */,
+				9878826525CB27070082E3E8 /* XCRemoteSwiftPackageReference "Swinject" */,
+				9878826B25CB27190082E3E8 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */,
+				9878827125CB284D0082E3E8 /* XCRemoteSwiftPackageReference "RxRestClient" */,
+				9878827725CB29380082E3E8 /* XCRemoteSwiftPackageReference "RxOptional" */,
+				9878828325CB2CF80082E3E8 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 98DF076D25CB0F99003943DA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,7 +380,7 @@
 			files = (
 				98DF077C25CB0F9A003943DA /* LaunchScreen.storyboard in Resources */,
 				98DF077925CB0F9A003943DA /* Assets.xcassets in Resources */,
-				98DF077725CB0F99003943DA /* Main.storyboard in Resources */,
+				98DF077725CB0F99003943DA /* PricebooksViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +405,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98DF077425CB0F99003943DA /* ViewController.swift in Sources */,
+				98DF077425CB0F99003943DA /* PricebooksViewController.swift in Sources */,
+				98DF07CC25CB111D003943DA /* AppStep.swift in Sources */,
+				98DF081225CB18B1003943DA /* Endpoints.swift in Sources */,
+				98DF080825CB1659003943DA /* PricebooksQuery.swift in Sources */,
+				98DF07D225CB119E003943DA /* MainAssembly.swift in Sources */,
 				98DF077025CB0F99003943DA /* AppDelegate.swift in Sources */,
+				98DF07C725CB10E2003943DA /* MainFlow.swift in Sources */,
+				98DF07DB25CB11FC003943DA /* PricebooksViewModel.swift in Sources */,
+				98DF07ED25CB14BE003943DA /* PricebookService.swift in Sources */,
 				98DF077225CB0F99003943DA /* SceneDelegate.swift in Sources */,
+				98DF07E425CB139A003943DA /* PricebookCell.swift in Sources */,
+				98DF080D25CB1716003943DA /* PricebooksState.swift in Sources */,
+				98DF07AB25CB1034003943DA /* PricebookResponse.swift in Sources */,
+				9878828B25CB2F400082E3E8 /* UIScrollView+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,12 +454,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		98DF077525CB0F99003943DA /* Main.storyboard */ = {
+		98DF077525CB0F99003943DA /* PricebooksViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				98DF077625CB0F99003943DA /* Base */,
 			);
-			name = Main.storyboard;
+			name = PricebooksViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		98DF077A25CB0F9A003943DA /* LaunchScreen.storyboard */ = {
@@ -593,6 +751,126 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9878824C25CB25960082E3E8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.1;
+			};
+		};
+		9878825625CB25EC0082E3E8 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.1;
+			};
+		};
+		9878825F25CB26DB0082E3E8 /* XCRemoteSwiftPackageReference "RxFlow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxFlow.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 2.11.0;
+			};
+		};
+		9878826525CB27070082E3E8 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		9878826B25CB27190082E3E8 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectAutoregistration.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.0;
+			};
+		};
+		9878827125CB284D0082E3E8 /* XCRemoteSwiftPackageReference "RxRestClient" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/STDevTM/RxRestClient.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
+		9878827725CB29380082E3E8 /* XCRemoteSwiftPackageReference "RxOptional" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/RxOptional.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+		9878828325CB2CF80082E3E8 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9878824D25CB25960082E3E8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878824C25CB25960082E3E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		9878824F25CB25960082E3E8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878824C25CB25960082E3E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		9878825125CB25960082E3E8 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878824C25CB25960082E3E8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		9878825725CB25EC0082E3E8 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878825625CB25EC0082E3E8 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+		9878826025CB26DB0082E3E8 /* RxFlow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878825F25CB26DB0082E3E8 /* XCRemoteSwiftPackageReference "RxFlow" */;
+			productName = RxFlow;
+		};
+		9878826625CB27070082E3E8 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878826525CB27070082E3E8 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		9878826C25CB27190082E3E8 /* SwinjectAutoregistration */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878826B25CB27190082E3E8 /* XCRemoteSwiftPackageReference "SwinjectAutoregistration" */;
+			productName = SwinjectAutoregistration;
+		};
+		9878827225CB284D0082E3E8 /* RxRestClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878827125CB284D0082E3E8 /* XCRemoteSwiftPackageReference "RxRestClient" */;
+			productName = RxRestClient;
+		};
+		9878827825CB29380082E3E8 /* RxOptional */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878827725CB29380082E3E8 /* XCRemoteSwiftPackageReference "RxOptional" */;
+			productName = RxOptional;
+		};
+		9878828425CB2CF80082E3E8 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9878828325CB2CF80082E3E8 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 98DF076425CB0F99003943DA /* Project object */;
 }
